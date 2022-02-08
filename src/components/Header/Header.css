@@ -1,0 +1,57 @@
+:root {
+  --dark: #141414;
+  --font-info: #e5e5e5;
+  --font-hover: #e5e5e5be;
+  --primary-btn: #e5091499;
+  --primary-btn-hover: #e50914;
+  --movie-price: #f5c518;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 6.8rem;
+  background-color: var(--dark);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+  flex: 2;
+}
+
+.nav-link {
+  margin: 1.6rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--font-info);
+  font-size: 1.4rem;
+}
+
+.nav-link a:hover {
+  color: var(--font-hover);
+}
+
+.nav-links-profile {
+  margin: 1.6rem;
+}
+
+.thumbnail-image:hover {
+  border: 0.1rem solid white;
+}
+
+.thumbnail-image {
+  width: 3.2rem;
+  height: 3.2rem;
+}
