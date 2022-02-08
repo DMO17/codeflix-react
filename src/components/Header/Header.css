@@ -55,3 +55,19 @@
   width: 3.2rem;
   height: 3.2rem;
 }
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: auto;
+    background-color: var(--dark);
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

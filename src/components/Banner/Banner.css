@@ -71,3 +71,9 @@
     top: 40%;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banner {
+    margin-top: 354px;
+  }
+}
