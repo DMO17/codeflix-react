@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
 import { Banner } from "./components/Banner";
-import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 import { MovieContainer } from "./components/MovieContainer";
 
@@ -128,7 +127,7 @@ const movieDataFromApi = [
   },
 ];
 
-function App() {
+export const App = () => {
   return (
     <div>
       <Header />;
@@ -138,6 +137,4 @@ function App() {
       </main>
     </div>
   );
-}
-
-export default App;
+};
