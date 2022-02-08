@@ -1,0 +1,41 @@
+.movie-card {
+  border: 0.1rem solid var(--font-info);
+  width: 20rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.movie-year {
+  position: absolute;
+  bottom: 0;
+  padding: 0.8rem;
+  background-color: var(--primary-btn-hover);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.movie-price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.8rem;
+  background-color: var(--movie-price);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.movie-card:hover {
+  animation: grow 0.5s ease-out;
+  cursor: pointer;
+  transform: scale(1.4);
+  z-index: 2;
+}

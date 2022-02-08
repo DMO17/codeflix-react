@@ -50,6 +50,14 @@
   background-color: var(--primary-btn-hover);
 }
 
+.sub-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--font-info);
+  letter-spacing: 0.4rem;
+}
+
 @keyframes moveInFromTopWithBounce {
   0% {
     top: 0%;
