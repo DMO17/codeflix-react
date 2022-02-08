@@ -1,0 +1,65 @@
+.banner {
+  height: 38rem;
+  background-image: linear-gradient(
+      to top,
+      rgb(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url("https://github.com/surajverma2587/codeflix-html-css/blob/main/assets/images/banner.jpeg?raw=true");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner:hover {
+  background-image: url("https://github.com/surajverma2587/codeflix-html-css/blob/main/assets/images/banner.jpeg?raw=true");
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--font-info);
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveInFromTopWithBounce 1s ease-out;
+}
+
+.banner-info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  min-width: 20rem;
+  padding: 2rem;
+  background-color: var(--primary-btn);
+  border-radius: 4rem;
+  color: var(--font-info);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+@keyframes moveInFromTopWithBounce {
+  0% {
+    top: 0%;
+  }
+
+  75% {
+    top: 45%;
+  }
+
+  100% {
+    top: 40%;
+  }
+}
