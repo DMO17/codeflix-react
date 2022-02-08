@@ -3,6 +3,7 @@ import "./App.css";
 import { Banner } from "./components/Banner";
 import { Card } from "./components/Card";
 import { Header } from "./components/Header";
+import { MovieContainer } from "./components/MovieContainer";
 
 const movieDataFromApi = [
   {
@@ -133,18 +134,7 @@ function App() {
       <Header />;
       <Banner />
       <main>
-        <section>
-          <h2 className="sub-title">UK Top 5</h2>
-          <div className="movies-container">
-            {movieDataFromApi.map((card) => (
-              <Card
-                movieImg={card.movieImg}
-                price={card.price}
-                year={card.year}
-              />
-            ))}
-          </div>
-        </section>
+        <MovieContainer movieData={movieDataFromApi} />
       </main>
     </div>
   );
